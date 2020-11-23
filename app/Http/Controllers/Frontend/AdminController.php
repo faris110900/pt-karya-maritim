@@ -12,6 +12,11 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+
+    public function __consturct() {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
         return view('admin.index');
