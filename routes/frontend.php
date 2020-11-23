@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\AdminController;
 use Illuminate\Support\Facades\Route;
 
 Route::name('frontend.')->group(function () {
@@ -12,5 +13,7 @@ Route::name('frontend.')->group(function () {
             return view('welcome2');
         });
         
+        Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
     });
 });
