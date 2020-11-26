@@ -216,13 +216,14 @@
                         <div class="icon-box">
                             <i class="icofont-bicycle-alt-1"></i>
                             <h4><a href="#">Sepeda</a></h4>
-                            <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                                occaecati cupiditate non provident</p>
+                            <p>
+                              <a href="">Selengkapnya</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-chart-bar-graph"></i>
+                            <i class="icofont-motor-bike-alt"></i>
                             <h4><a href="#">Motor dibawah 500cc</a></h4>
                             <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                 consequat tarad limino ata</p>
@@ -230,7 +231,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-image"></i>
+                            <i class="icofont-motor-biker"></i>
                             <h4><a href="#">Motor diatas 500cc</a></h4>
                             <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
                                 nulla pariatur</p>
@@ -238,7 +239,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-settings"></i>
+                            <i class="icofont-car-alt-1"></i>
                             <h4><a href="#">Mobil Pribadi</a></h4>
                             <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
                                 anim id est laborum</p>
@@ -246,7 +247,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-earth"></i>
+                            <i class="icofont-truck-loaded"></i>
                             <h4><a href="#">Pickup</a></h4>
                             <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
                                 voluptatum deleniti atque</p>
@@ -254,7 +255,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-tasks-alt"></i>
+                            <i class="icofont-school-bus"></i>
                             <h4><a href="#">Bis Mini</a></h4>
                             <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi</p>
@@ -263,7 +264,7 @@
                     <div class="row">
                         <div class="col-md-6 mt-4 mt-md-0">
                             <div class="icon-box">
-                                <i class="icofont-tasks-alt"></i>
+                                <i class="icofont-truck-alt"></i>
                                 <h4><a href="#">Truk Sedang</a></h4>
                                 <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
                                     soluta
@@ -272,7 +273,7 @@
                         </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-tasks-alt"></i>
+                            <i class="icofont-bus-alt-1"></i>
                             <h4><a href="#">Bus Besar</a></h4>
                             <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi</p>
@@ -280,7 +281,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-tasks-alt"></i>
+                          <i class="icofont-articulated-truck"></i>
                             <h4><a href="#">Truk Besar</a></h4>
                             <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi</p>
@@ -288,7 +289,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-tasks-alt"></i>
+                            <i class="icofont-oil-truck"></i>
                             <h4><a href="#">Tronton</a></h4>
                             <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi</p>
@@ -296,7 +297,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-tasks-alt"></i>
+                            <i class="icofont-oil-truck"></i>
                             <h4><a href="#">Kontainer</a></h4>
                             <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi</p>
@@ -304,7 +305,7 @@
                     </div>
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-tasks-alt"></i>
+                            <i class="icofont-truck"></i>
                             <h4><a href="#">Kontainer Panjang > 12M</a></h4>
                             <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
                                 nobis est eligendi</p>
@@ -314,185 +315,7 @@
             </div>
         </section><!-- End Services Section -->
 
-        <!-- ======= Portfolio Section ======= -->
-        <section id="portfolio" class="portfolio">
-            <div class="container">
-
-                <div class="section-title">
-                    <h2>Portfolio</h2>
-                    <p>Recent Works</p>
-                </div>
-
-                <div class="row">
-                    <div class="col-lg-12 d-flex justify-content-center">
-                        <ul id="portfolio-flters">
-                            <li data-filter="*" class="filter-active">All</li>
-                            <li data-filter=".filter-app">App</li>
-                            <li data-filter=".filter-card">Card</li>
-                            <li data-filter=".filter-web">Web</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="row portfolio-container">
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 1</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 2</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 2</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Web 2</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>App 3</h4>
-                                <p>App</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 1</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Card 3</h4>
-                                <p>Card</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-                        <div class="portfolio-wrap">
-                            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-                            <div class="portfolio-info">
-                                <h4>Web 3</h4>
-                                <p>Web</p>
-                                <div class="portfolio-links">
-                                    <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery"
-                                        class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                                    <a href="portfolio-details.html" data-gall="portfolioDetailsGallery"
-                                        data-vbtype="iframe" class="venobox" title="Portfolio Details"><i
-                                            class="bx bx-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </section><!-- End Portfolio Section -->
+        
 
     </main><!-- End #main -->
 
@@ -502,44 +325,30 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6">
+                    <div class="col-lg-4 col-md-6">
                         <div class="footer-info">
-                            <h3>Sailor</h3>
+                            <h3>PT.Karya Maritim Indonesia</h3>
                             <p>
-                                A108 Adam Street <br>
-                                NY 535022, USA<br><br>
-                                <strong>Phone:</strong> +1 5589 55488 55<br>
+                              JL.Gatot Subroto (Ruko Ketapang Blok A-3)<br>
+                                <strong>Phone 1:</strong> (0333)4460297<br>
+                                <strong>Phone 2 :</strong> (0333) 4466889<br>
                                 <strong>Email:</strong> info@example.com<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                <a href="https://www.facebook.com/PTKarya-Maritim-Indonesia-528916410651245/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/pt._karya_maritim_indonesia/" class="instagram"><i class="bx bxl-instagram"></i></a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
+                    <div class="col-lg-1 col-md-5 footer-links"></div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Services</h4>
+                        <h4>Layanan</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tarif</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="#">Kontak</a></li>
                         </ul>
                     </div>
 
@@ -558,14 +367,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>Sailor</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/sailor-free-bootstrap-theme/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                &copy; Copyright <strong><span><?php echo date("Y"); ?></span></strong>. All Rights Reserved
             </div>
         </div>
     </footer><!-- End Footer -->
