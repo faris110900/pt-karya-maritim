@@ -26,6 +26,7 @@
     <link href="{{ asset('sailor/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
     <link href="{{ asset('sailor/assets/vendor/venobox/venobox.css') }}" rel="stylesheet">
     <link href="{{ asset('sailor/assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
     <link href="{{ asset('sailor/assets/css/style.css') }}" rel="stylesheet">
@@ -38,36 +39,35 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-            <h1 class="logo"><a href="index.html" style="color: #0065ff;">PT.Karya Maritim Indonesia</a></h1>
+        <h1 class="logo"><a href="{{ url('/') }}" style="color: #0065ff;">PT.Karya Maritim Indonesia</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
             <nav class="nav-menu d-none d-lg-block ml-auto">
 
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-
-                    {{-- <li class="drop-down"><a href="#">About</a>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="team.html">Team</a></li>
-                            <li><a href="testimonials.html">Testimonials</a></li>
-
-                            <li class="drop-down"><a href="#">Deep Drop Down</a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                    <li><a href="#">Deep Drop Down 4</a></li>
-                                    <li><a href="#">Deep Drop Down 5</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li> --}}
+                    <li class="active"><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="pricing.html">Tarif</a></li>
                     <li><a href="pricing.html">Tentang Kami</a></li>
                     <li><a href="contact.html">Kontak</a></li>
-
+                                        {{-- <li class="drop-down"><a href="#">About</a>
+                                            <ul>
+                                                <li><a href="about.html">About Us</a></li>
+                                                <li><a href="team.html">Team</a></li>
+                                                <li><a href="testimonials.html">Testimonials</a></li>
+                    
+                                                <li class="drop-down"><a href="#">Deep Drop Down</a>
+                                                    <ul>
+                                                        <li><a href="#">Deep Drop Down 1</a></li>
+                                                        <li><a href="#">Deep Drop Down 2</a></li>
+                                                        <li><a href="#">Deep Drop Down 3</a></li>
+                                                        <li><a href="#">Deep Drop Down 4</a></li>
+                                                        <li><a href="#">Deep Drop Down 5</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li> --}}
+                    
                 </ul>
 
             </nav><!-- .nav-menu -->
@@ -144,22 +144,19 @@
     <main id="main">
 
         <!-- ======= About Section ======= -->
-        <section id="about" class="about">
+        <section id="about" class="about" data-aos="fade-up" data-aos-duration="2000">
             <div class="container">
 
                 <div class="row content">
                     <div class="col-lg-6 d-flex flex-column justify-content-center">
-                        <h2>Kami melayani</h2>
-                        {{-- <h3>Voluptatem dignissimos provident quasi corporis
-                            voluptates sit assum perenda sruen jonee trave</h3> --}}
+                        <div class="section-title">
+                            <h2>Tentang Kami</h2>
+                            <p>Tentang Kami</p>
+                        </div>
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>
-                            Alhamdulillah Kami telah dipercaya menangani pengiriman berbagai jenis barang seperti
-                            material telekomunikasi, material Spart Part Migas, barang pindahan rumah tangga, pengiriman
-                            mobil & alat berat dan berbagai macam barang general cargo baik menggunakan cargo darat,
-                            cargo laut, maupun cargo udara. Karena mereka percaya, Cargonesia adalah yang terbaik di
-                            bidangnya.
+                            PT.Karya Maritim Indonesia adalah sebuah perusahaan yang memberikan layanan untuk pengiriman dan penyeberangan dengan menggunakan kapal.
                         </p>
                     </div>
                 </div>
@@ -167,57 +164,42 @@
             </div>
         </section><!-- End About Section -->
 
-        <!-- ======= Clients Section ======= -->
-        <section id="clients" class="clients section-bg">
+        <section id="" class="pelayanan section-bg">
             <div class="container">
+                {{-- <div class="section-title">
+                    <h2>Tentang Kami</h2>
+                    <p>Tentang Kami</p>
+                </div> --}}
 
-                <div class="row">
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
+                <div class="row content">
+                    <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+                        <p>
+                            Kami telah memberikan layanan sejak tahun 2000 dan memberikan layanan jasa penyeberangan ke beberapa pulau diindonesia.
+                        </p>
                     </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
+                    <div class="col-lg-6 text-right" data-aos="fade-left" data-aos-duration="2000">
+                        <img src="{{ asset('assets/images/cargo.png') }}" class="img-fluid mt-3" style="width: 400px" alt="">
                     </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-                    </div>
-
-                    <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-                        <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
-                    </div>
-
                 </div>
-
             </div>
-        </section><!-- End Clients Section -->
+        </section>
 
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
             <div class="container">
 
-                <div class="section-title">
+                <div class="section-title" data-aos="fade-right" data-aos-duration="1000">
                     <h2>Layanan</h2>
                     <p>Apa Yang Kami Bisa Lakukan Untuk Anda ?</p>
                 </div>
 
-                <div class="row">
+                <div class="row" data-aos="fade-up" data-aos-duration="2000">
                     <div class="col-md-6">
                         <div class="icon-box">
                             <i class="icofont-bicycle-alt-1"></i>
                             <h4><a href="#">Sepeda</a></h4>
                             <p>
-                              <a href="">Selengkapnya</a>
+                                <a href="">Selengkapnya</a>
                             </p>
                         </div>
                     </div>
@@ -271,51 +253,68 @@
                                     nobis est eligendi</p>
                             </div>
                         </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-bus-alt-1"></i>
-                            <h4><a href="#">Bus Besar</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box">
+                                <i class="icofont-bus-alt-1"></i>
+                                <h4><a href="#">Bus Besar</a></h4>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta
+                                    nobis est eligendi</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                          <i class="icofont-articulated-truck"></i>
-                            <h4><a href="#">Truk Besar</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box">
+                                <i class="icofont-articulated-truck"></i>
+                                <h4><a href="#">Truk Besar</a></h4>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta
+                                    nobis est eligendi</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-oil-truck"></i>
-                            <h4><a href="#">Tronton</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box">
+                                <i class="icofont-oil-truck"></i>
+                                <h4><a href="#">Tronton</a></h4>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta
+                                    nobis est eligendi</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-oil-truck"></i>
-                            <h4><a href="#">Kontainer</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box">
+                                <i class="icofont-oil-truck"></i>
+                                <h4><a href="#">Kontainer</a></h4>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta
+                                    nobis est eligendi</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-truck"></i>
-                            <h4><a href="#">Kontainer Panjang > 12M</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box">
+                                <i class="icofont-truck"></i>
+                                <h4><a href="#">Kontainer Panjang > 12M</a></h4>
+                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
+                                    soluta
+                                    nobis est eligendi</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section><!-- End Services Section -->
 
-        
+
+        <section id="message" class="message" >
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
+                        <h3>PASTIKAN ANDA MEMILIH JASA EKSPEDISI YANG TEPAT UNTUK BARANG KIRIMAN ANDA</h3>
+                    </div>
+                    <div class="col-lg-4 mt-3" align="center" data-aos="fade-left" data-aos-duration="2000">
+                        <a href="" class="btn-get-started">Hubungi Kami</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main><!-- End #main -->
 
@@ -329,14 +328,16 @@
                         <div class="footer-info">
                             <h3>PT.Karya Maritim Indonesia</h3>
                             <p>
-                              JL.Gatot Subroto (Ruko Ketapang Blok A-3)<br>
+                                JL.Gatot Subroto (Ruko Ketapang Blok A-3)<br>
                                 <strong>Phone 1:</strong> (0333)4460297<br>
                                 <strong>Phone 2 :</strong> (0333) 4466889<br>
                                 <strong>Email:</strong> info@example.com<br>
                             </p>
                             <div class="social-links mt-3">
-                                <a href="https://www.facebook.com/PTKarya-Maritim-Indonesia-528916410651245/" class="facebook"><i class="bx bxl-facebook"></i></a>
-                                <a href="https://www.instagram.com/pt._karya_maritim_indonesia/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                <a href="https://www.facebook.com/PTKarya-Maritim-Indonesia-528916410651245/"
+                                    class="facebook"><i class="bx bxl-facebook"></i></a>
+                                <a href="https://www.instagram.com/pt._karya_maritim_indonesia/" class="instagram"><i
+                                        class="bx bxl-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -353,8 +354,7 @@
                     </div>
 
                     <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                        <h4>Tanyakan lebih lanjut</h4>
                         <form action="" method="post">
                             <input type="email" name="email"><input type="submit" value="Subscribe">
                         </form>
@@ -367,7 +367,8 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span><?php echo date("Y"); ?></span></strong>. All Rights Reserved
+                &copy; Copyright <strong><span><?php echo date('Y'); ?></span></strong>.
+                All Rights Reserved
             </div>
         </div>
     </footer><!-- End Footer -->
@@ -383,9 +384,13 @@
     <script src="{{ asset('sailor/assets/vendor/venobox/venobox.min.js') }}"></script>
     <script src="{{ asset('sailor/assets/vendor/waypoints/jquery.waypoints.min.js') }}"></script>
     <script src="{{ asset('sailor/assets/vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <!-- Template Main JS File -->
     <script src="{{ asset('sailor/assets/js/main.js') }}"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 

@@ -1,10 +1,3 @@
-/**
-* Template Name: Sailor - v2.2.0
-* Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -130,6 +123,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
   color: #0065ff;
+}
+
+.nav-menu a:hover, .nav-menu li:hover > a {
+  color: #e1444d;
 }
 
 .nav-menu .drop-down ul {
@@ -628,12 +625,52 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+.about {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
 .about .content h2 {
   font-weight: 700;
   font-size: 48px;
   line-height: 60px;
   margin-bottom: 20px;
   text-transform: uppercase;
+}
+
+.about .section-title {
+  padding-bottom: 40px;
+}
+
+.about .section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.about .section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #e6636a;
+  margin: 4px 10px;
+}
+
+.about .section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #556270;
 }
 
 .about .content h3 {
@@ -2139,4 +2176,109 @@ section {
 
 #footer .credits a:hover {
   color: white;
+}
+
+/*--------------------------------------------------------------
+# Pelayanan
+--------------------------------------------------------------*/
+
+.pelayanan .content h2 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pelayanan .content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+
+.pelayanan .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.pelayanan .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+
+.pelayanan .content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #0065ff;
+}
+
+.pelayanan .content p:last-child {
+  margin-bottom: 0;
+}
+
+.pelayanan .section-title {
+  padding-bottom: 40px;
+}
+
+.pelayanan .section-title h2 {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0;
+  line-height: 1px;
+  margin: 0 0 5px 0;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #aaaaaa;
+  font-family: "Poppins", sans-serif;
+}
+
+.pelayanan .section-title h2::after {
+  content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #e6636a;
+  margin: 4px 10px;
+}
+
+.pelayanan .section-title p {
+  margin: 0;
+  margin: 0;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #556270;
+}
+
+/*--------------------------------------------------------------
+# Message
+--------------------------------------------------------------*/
+
+.message {
+  background-color: #0065ff;
+  color: #fff;
+}
+
+.message .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 32px;
+  border-radius: 4px;
+  transition: 0.5s;
+  line-height: 1;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #fff;
+}
+
+.message .btn-get-started:hover {
+  background: #fff;
+  color: #4a5562;
 }
