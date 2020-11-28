@@ -33,4 +33,7 @@
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('./admin-lte/dist/js/demo.js')}}"></script>
 
+<script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+
+@include('sweetalert::alert')
 @stack('footer-scripts')

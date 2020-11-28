@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Frontend\AdminController;
+use App\Http\Controllers\Frontend\TarifController;
 use Illuminate\Support\Facades\Route;
 
 Route::name('frontend.')->group(function () {
@@ -20,9 +21,11 @@ Route::name('frontend.')->group(function () {
 
 Route::name('frontend.')->group(function () {
     Route::group([
-        'namespace' => 'Admin',
+        // 'namespace' => 'Admin',
         'middleware' => 'auth'
     ], function () {
         Route::get('/admin', [AdminController::class, 'index'])->name('admin');
+
+        Route::get('tarif', TarifController::class);
     });
 });

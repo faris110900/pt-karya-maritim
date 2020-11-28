@@ -356,7 +356,7 @@
                     <div class="col-lg-4 col-md-6 footer-newsletter">
                         <h4>Tanyakan lebih lanjut</h4>
                         <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
+                            <input type="email" name="email"><input type="submit" value="Submit">
                         </form>
 
                     </div>

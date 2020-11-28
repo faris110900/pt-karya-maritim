@@ -1,8 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use RealRashid\SweetAlert\Facades\Alert;
+use App\Models\Tarif;
 
 class TarifController extends Controller
 {
@@ -13,7 +16,9 @@ class TarifController extends Controller
      */
     public function index()
     {
-        //
+        $tarif = Tarif::all();
+
+        return view('admin.tarif.index', compact('tarif'));
     }
 
     /**
@@ -23,7 +28,7 @@ class TarifController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.tarif.create');
     }
 
     /**
