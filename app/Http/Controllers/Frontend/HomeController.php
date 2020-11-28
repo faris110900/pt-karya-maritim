@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Kontak;
+use App\Models\Tarif;
+use App\Models\Setting;
 
 class HomeController extends Controller
 {
@@ -24,6 +27,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $kontak = Kontak::all();
+
+        return view('frontend.home', compact('kontak'));
     }
 }

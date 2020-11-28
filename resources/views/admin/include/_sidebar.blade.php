@@ -54,7 +54,7 @@
                  </li>
                  <li class="nav-header">Master</li>
                  <li class="nav-item">
-                        <a href="{{ url('/tarif') }}" class="nav-link">
+                        <a href="{{ url('tarif') }}" class="nav-link">
                          <i class="nav-icon fas fa-chart-pie"></i>
                          <p>
                              Tarif
@@ -62,7 +62,7 @@
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a href="pages/gallery.html" class="nav-link">
+                 <a href="{{ url('kontak') }}" class="nav-link">
                          <i class="nav-icon fas fa-phone-alt"></i>
                          <p>
                              Kontak
@@ -70,7 +70,7 @@
                      </a>
                  </li>
                  <li class="nav-item">
-                     <a href="pages/gallery.html" class="nav-link">
+                        <a href="{{ url('setting') }}" class="nav-link">
                          <i class="nav-icon fas fa-cog"></i>
                          <p>
                              Setting

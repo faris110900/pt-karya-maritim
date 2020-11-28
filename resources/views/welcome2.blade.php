@@ -328,10 +328,12 @@
                         <div class="footer-info">
                             <h3>PT.Karya Maritim Indonesia</h3>
                             <p>
-                                JL.Gatot Subroto (Ruko Ketapang Blok A-3)<br>
+                                @foreach ($kontak as $kntk)
+                                {{ $kntk->address }}<br>
                                 <strong>Phone 1:</strong> (0333)4460297<br>
                                 <strong>Phone 2 :</strong> (0333) 4466889<br>
                                 <strong>Email:</strong> info@example.com<br>
+                                @endforeach
                             </p>
                             <div class="social-links mt-3">
                                 <a href="https://www.facebook.com/PTKarya-Maritim-Indonesia-528916410651245/"
