@@ -7,7 +7,6 @@ use Illuminate\Support\Facades\Route;
 Route::name('frontend.')->group(function () {
     Route::group([
         'namespace'  => 'Frontend',
-        // 'middleware' => ['auth', 'role:user']
     ], function () {
 
         Route::get('/', function () {
@@ -26,6 +25,7 @@ Route::name('frontend.')->group(function () {
     ], function () {
         Route::get('/admin', [AdminController::class, 'index'])->name('admin');
 
-        Route::get('tarif', TarifController::class);
+        Route::resource('tarif', TarifController::class);
+        Route::get('/tarif/{tarif}/delete', [TarifController::class, 'destroy'])->name('tarif.delete');
     });
 });

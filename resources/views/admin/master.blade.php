@@ -47,5 +47,6 @@
 <!-- ./wrapper -->
 
 @include('admin.include._footer-script')
+@stack('scripts')
 </body>
 </html>
