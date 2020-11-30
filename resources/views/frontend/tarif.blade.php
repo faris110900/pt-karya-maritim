@@ -89,7 +89,19 @@
                         </div>
         
                         <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                            <div class="col-md-6">
+                            @foreach ($tarif as $trf)
+                            <div class="col-md-6 mt-4 mt-md-0">
+                                <div class="icon-box">
+                                    <img src="{{ asset('storage/' . $trf->icon) }}" width="50px" class="img-fluid" alt="" srcset="">
+                                    <h4><a href="#">{{ $trf->name }}</a></h4>
+                                    <p>
+                                        {{ $trf->description }} <br>
+                                        Rp. {{ $trf->price }}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                            {{-- <div class="col-md-6 mt-4 mt-md-0">
                                 <div class="icon-box">
                                     <i class="icofont-bicycle-alt-1"></i>
                                     <h4><a href="#">Sepeda</a></h4>
@@ -195,7 +207,7 @@
                                             soluta
                                             nobis est eligendi</p>
                                     </div>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                 </section><!-- End Services Section -->

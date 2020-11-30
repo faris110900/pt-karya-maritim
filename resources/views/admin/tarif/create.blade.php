@@ -18,7 +18,7 @@
     </div><!-- /.container-fluid -->
 
     <div class="container-fluid">
-        <form action="{{ route('frontend.tarif.store') }}" method="post">
+        <form action="{{ route('frontend.tarif.store') }}" method="post" enctype="multipart/form-data">
             {{ csrf_field() }}
 
             <div class="form-group">
@@ -39,6 +39,11 @@
                 <textarea name="description" class="form-control" cols="30" rows="10">
                     </textarea>
             </div>
+
+            <div class="form-group">
+                <label for="">Icon Tarif</label>
+                <input type="file" class="form-control-file" id="" name="icon">
+              </div>
 
             <div class="mb-3" align="right">
                 <button class="btn btn-primary" value="save" type="submit">Upload</button>

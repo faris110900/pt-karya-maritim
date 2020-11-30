@@ -18,6 +18,7 @@ class CreateTarifsTable extends Migration
             $table->string('name');
             $table->string('price');
             $table->string('description');
+            $table->string('icon');
             $table->timestamps();
         });
     }

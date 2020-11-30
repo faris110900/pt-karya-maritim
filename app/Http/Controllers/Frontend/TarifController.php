@@ -55,7 +55,8 @@ class TarifController extends Controller
         Tarif::create([
             'name' => request('name'),
             'price' => request('price'),
-            'description' => request('description')
+            'description' => request('description'),
+            'icon' => request('icon')->store('icons')
         ]);
 
         return redirect()->route('frontend.tarif.index');
@@ -97,7 +98,8 @@ class TarifController extends Controller
         $tarif->update([
             'name' => request('name'),
             'price' => request('price'),
-            'description' => request('description')
+            'description' => request('description'),
+            'icon' => request('icon')->store('icons')
         ]);
 
         return redirect()->route('frontend.tarif.index');
@@ -113,6 +115,11 @@ class TarifController extends Controller
     {
         $tarif->delete();
         Alert::success('Success', 'Data tarif telah dihapus');
+
+        if($tarif->image){
+            \Storage::delete($tarif->icon);
+        }
+
 
         return redirect()->route('frontend.tarif.index');
     }

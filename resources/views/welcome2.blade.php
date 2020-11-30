@@ -194,110 +194,19 @@
                 </div>
 
                 <div class="row" data-aos="fade-up" data-aos-duration="2000">
-                    <div class="col-md-6">
+                    @foreach ($tarif as $trf)
+                    <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
-                            <i class="icofont-bicycle-alt-1"></i>
-                            <h4><a href="#">Sepeda</a></h4>
+                            <img src="{{ asset('storage/' . $trf->icon) }}" width="50px" class="img-fluid" alt="" srcset="">
+                            <h4><a href="#">{{ $trf->name }}</a></h4>
                             <p>
-                                <a href="">Selengkapnya</a>
+                                {{ $trf->description }} <br>
+                                Rp. {{ $trf->price }}
                             </p>
                         </div>
                     </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-motor-bike-alt"></i>
-                            <h4><a href="#">Motor dibawah 500cc</a></h4>
-                            <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                consequat tarad limino ata</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-motor-biker"></i>
-                            <h4><a href="#">Motor diatas 500cc</a></h4>
-                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                nulla pariatur</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-car-alt-1"></i>
-                            <h4><a href="#">Mobil Pribadi</a></h4>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-                                anim id est laborum</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-truck-loaded"></i>
-                            <h4><a href="#">Pickup</a></h4>
-                            <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                                voluptatum deleniti atque</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <i class="icofont-school-bus"></i>
-                            <h4><a href="#">Bis Mini</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <i class="icofont-truck-alt"></i>
-                                <h4><a href="#">Truk Sedang</a></h4>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta
-                                    nobis est eligendi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <i class="icofont-bus-alt-1"></i>
-                                <h4><a href="#">Bus Besar</a></h4>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta
-                                    nobis est eligendi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <i class="icofont-articulated-truck"></i>
-                                <h4><a href="#">Truk Besar</a></h4>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta
-                                    nobis est eligendi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <i class="icofont-oil-truck"></i>
-                                <h4><a href="#">Tronton</a></h4>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta
-                                    nobis est eligendi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <i class="icofont-oil-truck"></i>
-                                <h4><a href="#">Kontainer</a></h4>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta
-                                    nobis est eligendi</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-4 mt-md-0">
-                            <div class="icon-box">
-                                <i class="icofont-truck"></i>
-                                <h4><a href="#">Kontainer Panjang > 12M</a></h4>
-                                <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                    soluta
-                                    nobis est eligendi</p>
-                            </div>
-                        </div>
+                @endforeach
+                   
                     </div>
                 </div>
         </section><!-- End Services Section -->

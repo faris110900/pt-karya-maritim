@@ -24,6 +24,7 @@
             <table id="table-tarif" class="table">
                 <thead>
                     <tr>
+                        <th>Icon</th>
                         <th>Nama</th>
                         <th>Tarif</th>
                         <th>Deskripsi</th>
@@ -34,6 +35,7 @@
                 <tbody>
                     @foreach ($tarif as $trf)
                     <tr>
+                            <td> <img src="{{ asset('storage/' . $trf->icon) }}" width="50px" class="img-fluid" alt="" srcset=""></td>
                             <td>{{ $trf->name }}</td>
                             <td>Rp.{{ $trf->price }}</td>
                             <td>{{ $trf->description }}</td>
@@ -59,6 +61,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
+                        <th>Icon</th>
                         <th>Nama</th>
                         <th>Tarif</th>
                         <th>Deskripsi</th>

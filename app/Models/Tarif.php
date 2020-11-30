@@ -12,6 +12,7 @@ class Tarif extends Model
     protected $fillable = [
         'name',
         'price',
-        'description'
+        'description',
+        'icon'
     ];
 }

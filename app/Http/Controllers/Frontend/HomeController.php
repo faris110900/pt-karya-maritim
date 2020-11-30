@@ -27,8 +27,9 @@ class HomeController extends Controller
      */
     public function index()
     {
+        $tarif = Tarif::all();
         $kontak = Kontak::all();
 
-        return view('welcome2', compact('kontak'));
+        return view('welcome2', compact('kontak', 'tarif'));
     }
 }
