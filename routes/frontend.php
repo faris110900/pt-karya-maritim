@@ -38,5 +38,6 @@ Route::name('frontend.')->group(function () {
 
         Route::resource('setting', SettingController::class);
         Route::resource('kontak', KontakController::class);
+        Route::resource('about', AboutController::class);
     });
 });

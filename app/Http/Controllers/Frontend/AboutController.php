@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\About;
+use App\Models\Kontak;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AboutController extends Controller
 {
@@ -14,7 +17,17 @@ class AboutController extends Controller
      */
     public function index()
     {
+        $about = About::all();
         
+        return view('admin.about.index', compact('about'));
+    }
+
+    public function home(){
+        $about = About::all();
+        $kontak = Kontak::all();
+
+        return view('frontend.about', compact('about', 'kontak'));
+
     }
 
     /**
@@ -55,9 +68,10 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(About $about)
     {
-        //
+        
+        return view('admin.about.edit', compact('about'));
     }
 
     /**
@@ -67,9 +81,15 @@ class AboutController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(About $about)
     {
-        //
+        Alert::success('Success', 'Data kontak telah diedit');
+
+        $about->update([
+            'content' => request('content')
+        ]);
+
+        return redirect()->route('frontend.about.index');
     }
 
     /**

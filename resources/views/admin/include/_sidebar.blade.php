@@ -62,6 +62,14 @@
                      </a>
                  </li>
                  <li class="nav-item">
+                    <a href="{{ url('about') }}" class="nav-link">
+                            <i class="nav-icon fas fa-users"></i>
+                            <p>
+                                Tentang Kami
+                            </p>
+                        </a>
+                    </li>
+                 <li class="nav-item">
                  <a href="{{ url('kontak') }}" class="nav-link">
                          <i class="nav-icon fas fa-phone-alt"></i>
                          <p>

@@ -35,5 +35,7 @@
 
 <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
 
+<script src="https://cdn.ckeditor.com/4.15.1/standard/ckeditor.js"></script>
+
 @include('sweetalert::alert')
 @stack('footer-scripts')
