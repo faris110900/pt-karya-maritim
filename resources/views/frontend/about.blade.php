@@ -49,7 +49,7 @@
                     <li class="active"><a href="{{ url('/') }}">Home</a></li>
                     <li><a href="{{ url('tarif-home') }}">Tarif</a></li>
                     <li><a href="{{ url('about-home') }}">Tentang Kami</a></li>
-                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="{{ url('kontak-home') }}">Kontak</a></li>
                                         {{-- <li class="drop-down"><a href="#">About</a>
                                             <ul>
                                                 <li><a href="about.html">About Us</a></li>

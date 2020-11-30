@@ -16,6 +16,7 @@ Route::name('frontend.')->group(function () {
         Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
         Route::get('tarif-home', [TarifController::class, 'home'])->name('tarif-home');
         Route::get('about-home', [AboutController::class, 'home'])->name('about-home');
+        Route::get('kontak-home', [KontakController::class,'home'])->name('kontak-home');
 
         // Route::get('/', function () {
         //     return view('welcome2');

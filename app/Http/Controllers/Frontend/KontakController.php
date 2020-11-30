@@ -21,6 +21,13 @@ class KontakController extends Controller
         return view('admin.kontak.index', compact('kontak'));
     }
 
+    public function home(){
+
+        $kontak = Kontak::all();
+
+        return view('frontend.kontak', compact('kontak'));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
