@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Kontak;
 use RealRashid\SweetAlert\Facades\Alert;
 use Illuminate\Support\Str;
 use Yajra\DataTables\Facades\DataTables;
@@ -21,6 +22,14 @@ class TarifController extends Controller
         $tarif = Tarif::all();
 
         return view('admin.tarif.index', compact('tarif'));
+    }
+
+    public function home(){
+
+        $tarif = Tarif::all();
+        $kontak = Kontak::all();
+
+        return view('frontend.tarif', compact('tarif', 'kontak'));
     }
 
     /**

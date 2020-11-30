@@ -15,10 +15,10 @@ class HomeController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -29,6 +29,6 @@ class HomeController extends Controller
     {
         $kontak = Kontak::all();
 
-        return view('frontend.home', compact('kontak'));
+        return view('welcome2', compact('kontak'));
     }
 }

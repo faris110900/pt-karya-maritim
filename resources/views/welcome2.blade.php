@@ -47,7 +47,7 @@
 
                 <ul>
                     <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                    <li><a href="pricing.html">Tarif</a></li>
+                    <li><a href="{{ url('tarif-home') }}">Tarif</a></li>
                     <li><a href="pricing.html">Tentang Kami</a></li>
                     <li><a href="contact.html">Kontak</a></li>
                                         {{-- <li class="drop-down"><a href="#">About</a>
@@ -330,9 +330,9 @@
                             <p>
                                 @foreach ($kontak as $kntk)
                                 {{ $kntk->address }}<br>
-                                <strong>Phone 1:</strong> (0333)4460297<br>
-                                <strong>Phone 2 :</strong> (0333) 4466889<br>
-                                <strong>Email:</strong> info@example.com<br>
+                                <strong>Phone 1:</strong> {{ $kntk->phone1 }}<br>
+                                <strong>Phone 2 :</strong> {{ $kntk->phone2 }}<br>
+                                <strong>Email:</strong> {{ $kntk->email }}<br>
                                 @endforeach
                             </p>
                             <div class="social-links mt-3">

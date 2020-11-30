@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\AdminController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\KontakController;
@@ -12,11 +13,13 @@ Route::name('frontend.')->group(function () {
         'namespace'  => 'Frontend',
     ], function () {
 
-        // Route::get('home', [HomeController::class, 'index'])->name('home');
+        Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
+        Route::get('tarif-home', [TarifController::class, 'home'])->name('tarif-home');
+        Route::get('about-home', [AboutController::class, 'home'])->name('about-home');
 
-        Route::get('/', function () {
-            return view('welcome2');
-        });
+        // Route::get('/', function () {
+        //     return view('welcome2');
+        // });
         
         
 
