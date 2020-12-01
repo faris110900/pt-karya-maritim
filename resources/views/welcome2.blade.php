@@ -198,7 +198,7 @@
                     <div class="col-md-6 mt-4 mt-md-0">
                         <div class="icon-box">
                             <img src="{{ asset('storage/' . $trf->icon) }}" width="50px" class="img-fluid" alt="" srcset="">
-                            <h4><a href="#">{{ $trf->name }}</a></h4>
+                            <h4>{{ $trf->name }}</h4>
                             <p>
                                 {{ $trf->description }} <br>
                                 Rp. {{ $trf->price }}
@@ -219,7 +219,7 @@
                         <h3>PASTIKAN ANDA MEMILIH JASA EKSPEDISI YANG TEPAT UNTUK BARANG KIRIMAN ANDA</h3>
                     </div>
                     <div class="col-lg-4 mt-3" align="center" data-aos="fade-left" data-aos-duration="2000">
-                        <a href="" class="btn-get-started">Hubungi Kami</a>
+                        <a href="{{ url('kontak-home') }}" class="btn-get-started">Hubungi Kami</a>
                     </div>
                 </div>
             </div>
