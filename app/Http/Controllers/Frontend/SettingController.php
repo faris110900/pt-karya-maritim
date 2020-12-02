@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Setting;
 
 class SettingController extends Controller
 {
@@ -14,7 +15,9 @@ class SettingController extends Controller
      */
     public function index()
     {
-        return view('admin.setting.index');
+        $setting = Setting::all();
+
+        return view('admin.setting.index', compact('setting'));
     }
 
     /**

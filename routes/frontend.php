@@ -38,7 +38,9 @@ Route::name('frontend.')->group(function () {
         Route::get('/tarif/{tarif}/delete', [TarifController::class, 'destroy'])->name('tarif.delete');
 
         Route::resource('setting', SettingController::class);
+        Route::get('/setting/edit/{setting}', [SettingController::class, 'edit'])->name('setting.edit');
         Route::resource('kontak', KontakController::class);
         Route::resource('about', AboutController::class);
+        
     });
 });

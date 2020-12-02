@@ -15,6 +15,14 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->id();
+            $table->string('slide1');
+            $table->string('slide2');
+            $table->string('slide3');
+            $table->string('title');
+            $table->string('caption');
+            $table->string('section1');
+            $table->string('section2');
+            $table->string('titlenav');
             $table->timestamps();
         });
     }
