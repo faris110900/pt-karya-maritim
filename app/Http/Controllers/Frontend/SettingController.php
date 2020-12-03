@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Frontend;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Setting;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class SettingController extends Controller
 {
@@ -58,9 +59,10 @@ class SettingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Setting $setting)
     {
-        //
+
+        return view('admin.setting.edit', compact('setting'));
     }
 
     /**
@@ -70,9 +72,22 @@ class SettingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Setting $setting)
     {
-        //
+        Alert::success('success', 'Berhasil diupdate');
+
+        $setting->update([
+            'slide1' => request('slide1')->store('slides'),
+            'slide2' => request('slide2')->store('slides'),
+            'slide3' => request('slide3')->store('slides'),
+            'title' => request('title'),
+            'caption' => request('caption'),
+            'section1' => request('section1'),
+            'section2' => request('section2'),
+            'titlenav' => request('titlenav')
+        ]);
+
+            return redirect()->route('frontend.setting.index');
     }
 
     /**

@@ -22,8 +22,10 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                width="300px" class="img-fluid" alt="">
+                            @foreach ($setting as $stg)
+                            <img src="{{ asset('storage/' . $stg->slide1) }}"
+                            width="300px" class="img-fluid" alt="">
+                            @endforeach
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2>Foto Slide Pertama</h2>
@@ -32,8 +34,10 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                width="300px" class="img-fluid" alt="">
+                            @foreach ($setting as $stg)
+                            <img src="{{ asset('storage/' . $stg->slide2) }}"
+                            width="300px" class="img-fluid" alt="">
+                            @endforeach
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2>Foto Slide Kedua</h2>
@@ -42,8 +46,10 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-6">
-                            <img src="https://images.unsplash.com/photo-1490730141103-6cac27aaab94?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
-                                width="300px" class="img-fluid" alt="">
+                            @foreach ($setting as $stg)
+                            <img src="{{ asset('storage/' . $stg->slide3) }}"
+                            width="300px" class="img-fluid" alt="">
+                            @endforeach
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2>Foto Slide Ketiga</h2>
@@ -55,11 +61,14 @@
                             <strong> Title : </strong> {{ $stg->title }}<br>
                             <strong> Caption Slide : </strong> {{ $stg->caption }}<br>
                             <strong> Section 1 about us : </strong> {{ $stg->section1 }}<br>
-                            <strong> Section 2 about us : </strong><br>
-                            <strong> Title Navbar : </strong>
+                            <strong> Section 2 about us : </strong>{{ $stg->section2 }}<br>
+                            <strong> Title Navbar : </strong>{{ $stg->titlenav }}
+                        </p>
+                        <div class="btn-edit" align="right">
+                            <a href="{{ route('frontend.setting.edit', $stg) }}" class="btn btn-primary">Edit</a>
+                        </div>
                         @endforeach
-                    </p>
-                </div>
+                    </div>
             </div>
         </div>
 
