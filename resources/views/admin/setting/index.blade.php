@@ -22,10 +22,9 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-lg-6">
-                            @foreach ($setting as $stg)
-                            <img src="{{ asset('storage/' . $stg->slide1) }}"
+                            <img src="{{ asset('storage/' . $setting[0]->slide1) }}"
                             width="300px" class="img-fluid" alt="">
-                            @endforeach
+                            
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2>Foto Slide Pertama</h2>
@@ -34,10 +33,8 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-6">
-                            @foreach ($setting as $stg)
-                            <img src="{{ asset('storage/' . $stg->slide2) }}"
+                            <img src="{{ asset('storage/' . $setting[0]->slide2) }}"
                             width="300px" class="img-fluid" alt="">
-                            @endforeach
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2>Foto Slide Kedua</h2>
@@ -46,10 +43,8 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-6">
-                            @foreach ($setting as $stg)
-                            <img src="{{ asset('storage/' . $stg->slide3) }}"
+                            <img src="{{ asset('storage/' . $setting[0]->slide3) }}"
                             width="300px" class="img-fluid" alt="">
-                            @endforeach
                         </div>
                         <div class="col-lg-6 d-flex flex-column justify-content-center">
                             <h2>Foto Slide Ketiga</h2>
@@ -57,17 +52,17 @@
                     </div>
                     <hr>
                     <p>
-                        @foreach ($setting as $stg)
-                            <strong> Title : </strong> {{ $stg->title }}<br>
-                            <strong> Caption Slide : </strong> {{ $stg->caption }}<br>
-                            <strong> Section 1 about us : </strong> {{ $stg->section1 }}<br>
-                            <strong> Section 2 about us : </strong>{{ $stg->section2 }}<br>
-                            <strong> Title Navbar : </strong>{{ $stg->titlenav }}
+                        {{-- @foreach ($setting as $stg) --}}
+                            <strong> Title : </strong> {{ $setting[0]->title }}<br>
+                            <strong> Caption Slide : </strong> {{ $setting[0]->caption }}<br>
+                            <strong> Section 1 about us : </strong> {{ $setting[0]->section1 }}<br>
+                            <strong> Section 2 about us : </strong>{{ $setting[0]->section2 }}<br>
+                            <strong> Title Navbar : </strong>{{ $setting[0]->titlenav }}
                         </p>
                         <div class="btn-edit" align="right">
-                            <a href="{{ route('frontend.setting.edit', $stg) }}" class="btn btn-primary">Edit</a>
+                            <a href="{{ route('frontend.setting.edit', $setting[0]->id) }}" class="btn btn-primary">Edit</a>
                         </div>
-                        @endforeach
+                        {{-- @endforeach --}}
                     </div>
             </div>
         </div>

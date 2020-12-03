@@ -5,7 +5,10 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>PT.Karya Maritim Indonesia</title>
+    {{-- @foreach ($setting as $stg)
+        <title>{{ $stg->title }}</title>
+    @endforeach --}}
+    <title>{{ $setting[0]->title }}</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -39,7 +42,7 @@
     <header id="header" class="fixed-top ">
         <div class="container d-flex align-items-center">
 
-        <h1 class="logo"><a href="{{ url('/') }}" style="color: #0065ff;">PT.Karya Maritim Indonesia</a></h1>
+        <h1 class="logo"><a href="{{ url('/') }}" style="color: #0065ff;">{{ $setting[0]->titlenav }}</a></h1>
             <!-- Uncomment below if you prefer to use an image logo -->
             <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -50,24 +53,24 @@
                     <li><a href="{{ url('tarif-home') }}">Tarif</a></li>
                     <li><a href="{{ url('about-home') }}">Tentang Kami</a></li>
                     <li><a href="{{ url('kontak-home') }}">Kontak</a></li>
-                                        {{-- <li class="drop-down"><a href="#">About</a>
-                                            <ul>
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="team.html">Team</a></li>
-                                                <li><a href="testimonials.html">Testimonials</a></li>
-                    
-                                                <li class="drop-down"><a href="#">Deep Drop Down</a>
-                                                    <ul>
-                                                        <li><a href="#">Deep Drop Down 1</a></li>
-                                                        <li><a href="#">Deep Drop Down 2</a></li>
-                                                        <li><a href="#">Deep Drop Down 3</a></li>
-                                                        <li><a href="#">Deep Drop Down 4</a></li>
-                                                        <li><a href="#">Deep Drop Down 5</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li> --}}
-                    
+                    {{-- <li class="drop-down"><a href="#">About</a>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="testimonials.html">Testimonials</a></li>
+
+                            <li class="drop-down"><a href="#">Deep Drop Down</a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li> --}}
+
                 </ul>
 
             </nav><!-- .nav-menu -->
@@ -88,12 +91,13 @@
 
                 <!-- Slide 1 -->
                 <div class="carousel-item active"
-                    style="background-image: url({{ asset('assets/images/hero-1.jpg') }})">
+                    style="background-image: url({{  asset('storage/' . $setting[0]->slide1) }})">
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">PT.Karya Maritim Indonesia</span></h2>
-                            <p class="animate__animated animate__fadeInUp">Solusi jasa pengiriman barang ke Banyuwangi
-                                dan bali.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                {{ $setting[0]->caption }}
+                            </p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                                 More</a>
                         </div>
@@ -101,12 +105,13 @@
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: url({{ asset('assets/images/hero-2.jpg') }})">
+                <div class="carousel-item" style="background-image: url({{  asset('storage/' . $setting[0]->slide2)}})">
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">PT.Karya Maritim Indonesia</h2>
-                            <p class="animate__animated animate__fadeInUp">Solusi jasa pengiriman barang ke Banyuwangi
-                                dan bali.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                {{ $setting[0]->caption }}
+                            </p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                                 More</a>
                         </div>
@@ -114,12 +119,13 @@
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item" style="background-image: url({{ asset('assets/images/hero-3.jpg') }})">
+                <div class="carousel-item" style="background-image: url({{  asset('storage/' . $setting[0]->slide3) }})">
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">PT.Karya Maritim Indonesia</h2>
-                            <p class="animate__animated animate__fadeInUp">Solusi jasa pengiriman barang ke Banyuwangi
-                                dan bali.</p>
+                            <p class="animate__animated animate__fadeInUp">
+                                {{ $setting[0]->caption }}
+                            </p>
                             <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
                                 More</a>
                         </div>
@@ -156,7 +162,7 @@
                     </div>
                     <div class="col-lg-6 pt-4 pt-lg-0">
                         <p>
-                            PT.Karya Maritim Indonesia adalah sebuah perusahaan yang memberikan layanan untuk pengiriman dan penyeberangan dengan menggunakan kapal.
+                            {{ $setting[0]->section1 }}
                         </p>
                     </div>
                 </div>
@@ -172,13 +178,15 @@
                 </div> --}}
 
                 <div class="row content">
-                    <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="col-lg-6 pt-4 pt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-right"
+                        data-aos-duration="1000">
                         <p>
-                            Kami telah memberikan layanan sejak tahun 2000 dan memberikan layanan jasa penyeberangan ke beberapa pulau diindonesia.
+                            {{ $setting[0]->section2 }}
                         </p>
                     </div>
                     <div class="col-lg-6 text-right" data-aos="fade-left" data-aos-duration="2000">
-                        <img src="{{ asset('assets/images/cargo.png') }}" class="img-fluid mt-3" style="width: 400px" alt="">
+                        <img src="{{ asset('assets/images/cargo.png') }}" class="img-fluid mt-3" style="width: 400px"
+                            alt="">
                     </div>
                 </div>
             </div>
@@ -195,24 +203,25 @@
 
                 <div class="row" data-aos="fade-up" data-aos-duration="2000">
                     @foreach ($tarif as $trf)
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <div class="icon-box">
-                            <img src="{{ asset('storage/' . $trf->icon) }}" width="50px" class="img-fluid" alt="" srcset="">
-                            <h4>{{ $trf->name }}</h4>
-                            <p>
-                                {{ $trf->description }} <br>
-                                Rp. {{ $trf->price }}
-                            </p>
+                        <div class="col-md-6 mt-4 mt-md-0">
+                            <div class="icon-box">
+                                <img src="{{ asset('storage/' . $trf->icon) }}" width="50px" class="img-fluid" alt=""
+                                    srcset="">
+                                <h4>{{ $trf->name }}</h4>
+                                <p>
+                                    {{ $trf->description }} <br>
+                                    Rp. {{ $trf->price }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                @endforeach
-                   
-                    </div>
+                    @endforeach
+
                 </div>
+            </div>
         </section><!-- End Services Section -->
 
 
-        <section id="message" class="message" >
+        <section id="message" class="message">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8" data-aos="fade-right" data-aos-duration="1000">
@@ -238,10 +247,10 @@
                             <h3>PT.Karya Maritim Indonesia</h3>
                             <p>
                                 @foreach ($kontak as $kntk)
-                                {{ $kntk->address }}<br>
-                                <strong>Phone 1:</strong> {{ $kntk->phone1 }}<br>
-                                <strong>Phone 2 :</strong> {{ $kntk->phone2 }}<br>
-                                <strong>Email:</strong> {{ $kntk->email }}<br>
+                                    {{ $kntk->address }}<br>
+                                    <strong>Phone 1:</strong> {{ $kntk->phone1 }}<br>
+                                    <strong>Phone 2 :</strong> {{ $kntk->phone2 }}<br>
+                                    <strong>Email:</strong> {{ $kntk->email }}<br>
                                 @endforeach
                             </p>
                             <div class="social-links mt-3">
@@ -301,7 +310,8 @@
     <script src="{{ asset('sailor/assets/js/main.js') }}"></script>
     <script>
         AOS.init();
-      </script>
+
+    </script>
 
 </body>
 

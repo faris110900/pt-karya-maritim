@@ -29,7 +29,9 @@ class HomeController extends Controller
     {
         $tarif = Tarif::all();
         $kontak = Kontak::all();
+        $setting = Setting::get();
 
-        return view('welcome2', compact('kontak', 'tarif'));
+        return view('welcome2', ['setting' => $setting, 'tarif' => $tarif, 'kontak' => $kontak]);
+
     }
 }
